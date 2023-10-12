@@ -4,12 +4,15 @@ import { Logo } from "../../componenc/logo/Logo";
 import { Navigation } from "../../componenc/navigation/Navigation";
 import { Icon } from "../../componenc/icon/Icon";
 
+const itemsNav = ["Home","About","Tech Stack","Projects","Contact"]
+
+
 
 export const Header = () => {
 	return (
 		<StyledHeader>
 			<Logo/>
-			<Navigation/>
+			<Navigation navItems={itemsNav}/>
 			
 		</StyledHeader>
 	);
