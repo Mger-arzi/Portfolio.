@@ -1,9 +1,18 @@
 import React from 'react';
 import iconsSprite from '../../accers/image/sprite.svg'
-export const Icon = () => {
+
+type IconPropsType = {
+	iconId: string
+	width?:string
+	height?:string
+	viewBox?:string
+}
+
+export const Icon = (props: IconPropsType) => {
+	
 	return (
-			<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<use xlinkHref={ `${iconsSprite}#${''}` }/>
+		<svg fill="#584dcfdd" width={props.width || "110px"} height={props.height || "120px"} viewBox={props.viewBox ||"0 0 50 50"}  xmlns="http://www.w3.org/2000/svg">
+				<use xlinkHref={ `${iconsSprite}#${props.iconId}` }/>
 			</svg>
 	);
 };

@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import { Icon } from '../icon/Icon';
 export const Logo = () => {
 	return (
-		<div>
-			<a href="">
-				<Icon/>
+			<a href="" >
+				<Icon width='55px' height='60px' iconId = {"logoTS"}/>
 			</a>
-		</div>
 	);
 };
