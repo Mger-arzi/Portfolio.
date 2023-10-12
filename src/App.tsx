@@ -2,6 +2,7 @@ import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
 import { Main } from './layout/section/main/Main';
+import { Skills } from './layout/section/skills/Skills';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
             <Header/>
             <Main/>
-
+            <Skills/>
             {/* <Title>Styled-components <span>.attrs</span> method</Title>
             <Form>
                 <CheckBox type='radio'/>
