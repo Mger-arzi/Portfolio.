@@ -10,9 +10,7 @@ export const Header = () => {
 		<StyledHeader>
 			<Logo/>
 			<Navigation/>
-			<Icon width='55px' height='60px' iconId = {"GitLogo"}/>
-			<Icon width='55px' height='60px' iconId = {"LogoTelega"}/>
-
+			
 		</StyledHeader>
 	);
 };

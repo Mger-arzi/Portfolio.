@@ -1,16 +1,15 @@
 import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
+import { Main } from './layout/section/main/Main';
 
 
 function App() {
     return (
         <div >
 
-<Header/>
-
-
-
+            <Header/>
+            <Main/>
 
             {/* <Title>Styled-components <span>.attrs</span> method</Title>
             <Form>
