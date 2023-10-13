@@ -4,6 +4,9 @@ import { Header } from './layout/header/Header';
 import { Main } from './layout/section/main/Main';
 import { Skills } from './layout/section/skills/Skills';
 import { Works } from './layout/section/works/Works';
+import { SliderComponent } from './layout/section/slider/SliderComponent';
+import { SectionTitle } from './componenc/SectionTitle';
+import { TitleFooter } from './layout/section/titleFooter/TitleFooter';
 
 
 function App() {
@@ -14,8 +17,8 @@ function App() {
             <Main/>
             <Skills/>
             <Works/>
-
-
+            <SliderComponent/>
+            <TitleFooter/>
 
 
 

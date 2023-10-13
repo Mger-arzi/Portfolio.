@@ -35,10 +35,12 @@ const Photo = styled.img`
 	width: 350px;
 	height: 350px;
 	object-fit: cover;
-	border-radius: 50%;
-	border: 4px solid  #00C0FD;
-	//#E70FAA
+	background: linear-gradient(to right,#13B0F5, #E70FAA) border-box;
+  	border-radius: 50em;
+  	border: 4px solid transparent;
+
 `
+
 const SpanHello = styled.span`
 	
 `
@@ -47,7 +49,9 @@ const SpanName = styled.span`
 	
 `
 const MyName = styled.h2`
-	
+	background: -webkit-linear-gradient(#13B0F5, #E70FAA);
+			-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;	
 `
 const IFrontEnder = styled.h1`
 	
