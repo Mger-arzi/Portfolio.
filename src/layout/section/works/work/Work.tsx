@@ -11,7 +11,7 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
 	return (
 		<SteledWork>
-			<Image src={props.src} alt="" />
+			<Image src={props.src} alt="image" />
 			<Title>{props.title}</Title>
 			<Text>{props.text}</Text>
 			<TechStack>Мой стек: {props.stack}</TechStack>
