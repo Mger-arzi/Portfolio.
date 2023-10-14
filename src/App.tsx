@@ -7,6 +7,7 @@ import { Works } from './layout/section/works/Works';
 import { SliderComponent } from './layout/section/slider/SliderComponent';
 import { SectionTitle } from './componenc/SectionTitle';
 import { TitleFooter } from './layout/section/titleFooter/TitleFooter';
+import { Footer } from './layout/footer/Footer';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Works/>
             <SliderComponent/>
             <TitleFooter/>
-
+            <Footer/>
 
 
 
