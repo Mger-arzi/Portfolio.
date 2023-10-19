@@ -10,10 +10,10 @@ export const Skills = () => {
 			<SectionTitle>Мой техничесикий стек</SectionTitle>
 			<SectionDec>Технологии, с которыми я работал в последнее время</SectionDec>
 			<FlexWrapper justify='center' align='center' wrap="wrap">
-				<Icon viewBox ={'0 8 35 25'} iconId={"logoTS"}/>
-				<Icon iconId={"GitLogo"}/>
-				<Icon iconId={"ReactLogo"}/>
-				<Icon iconId={"JSlogo"}/>
+				<Icon viewBox ={'0 0 35 35'} iconId={"logoTS"}/>
+				<Icon viewBox={'0 0 35 35'} iconId={"GitLogo"}/>
+				<Icon viewBox={'0 0 35 35'} iconId={"ReactLogo"}/>
+				<Icon viewBox={'0 0 35 35'}  iconId={"JSlogo"}/>
 				<Icon iconId={"ReduxLogo"}/>
 				<Icon iconId={"gitHubLogo"}/>
 				<Icon iconId={"LogoStyled"}/>
