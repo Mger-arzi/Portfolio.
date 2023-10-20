@@ -20,9 +20,6 @@ export  const Main = () => {
 						<Photo src={photo} alt="" />
 						<BorderPhoto1></BorderPhoto1>
 						<BorderPhoto2></BorderPhoto2>
-						<BorderPhoto3></BorderPhoto3>
-						<BorderPhoto4></BorderPhoto4>
-						<BorderPhoto5></BorderPhoto5>
 					</WrapperPhoto>
 				</FlexWrapper>
 			</Container>
@@ -158,16 +155,4 @@ const BorderPhoto2 = styled.div`
 			top: -40px;
 			left: -25px;
 	}
-`
-
-const BorderPhoto3 = styled.div`
-	
-	
-`
-
-const BorderPhoto4 = styled.div`
-	
-`
-const BorderPhoto5 = styled.div`
-	
 `
