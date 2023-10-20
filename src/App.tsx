@@ -13,7 +13,7 @@ import { Footer } from './layout/footer/Footer';
 function App() {
     return (
         <div >
-
+            
             <Header/>
             <Main/>
             <Skills/>
