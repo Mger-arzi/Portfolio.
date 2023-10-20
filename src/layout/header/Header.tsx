@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../componenc/logo/Logo";
 import { Navigation } from "../../componenc/navigation/Navigation";
+import { Container } from "../../componenc/container/Container";
+import { FlexWrapper } from "../../componenc/FlexWrapper";
+import { Icon } from "../../componenc/icon/Icon";
+import rocket from "../../accers/image/rocket.svg"
+import { theme } from "../../componenc/Theme";
+
 
 const itemsNav = ["Home","About","Tech Stack","Projects","Contact"]
 
@@ -10,17 +16,55 @@ const itemsNav = ["Home","About","Tech Stack","Projects","Contact"]
 export const Header = () => {
 	return (
 		<StyledHeader>
-			<Logo iconId="ReduxLogo"/>
-			<Navigation navItems={itemsNav}/>
-			<Logo href="https://web.telegram.org/a/#1140893833" iconId="LogoTelega"/>
-			<Logo iconId="gitHubLogo"/>
+			<Container>
+				
+				<FlexWrapper align="center" justify="end;">
+
+					<StyleSVG src={rocket} alt="rocket" />
+						
+					
+					<Navigation navItems={itemsNav}/>
+					<Icon viewBox="0 0 23 23" width="35px"height="35px"  iconId="LogoTelega"/>
+					<Icon viewBox="0 0 30 30" width="30px"height="30px" iconId="gitHubLogo"/>
+					
+
+					
+				</FlexWrapper>
+				
+			</Container>
+			
 			
 		</StyledHeader>
 	);
 };
 const StyledHeader = styled.header`
 background-color: #191919;
-display: flex;
-justify-content: space-between;
-align-items: center;
+padding: 20px 0 ;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 9999;
+svg:not(:last-child){
+	margin-right: 20px;
+}
+li:hover{
+	transform: rotate(6deg) scale(1.3) translateY(-2px);
+	color: #fff;
+	transition: all 1s ease;
+
+}
+svg:hover{
+	transform: translateY(-5px);
+	transition: all 1s ease;
+}
+`
+const StyleSVG = styled.img`
+	width: 50px;
+	position: fixed;
+	top: 10px;
+	left: 135px;
+	right: 0;
+
+
 `

@@ -6,11 +6,15 @@ type IconPropsType = {
 	width?: string;
 	height?: string;
 	viewBox?: string;
+	href?: string;
+	marginR?:string
 };
 
 export const Icon = (props: IconPropsType) => {
 	return (
 		<svg
+			margin-right = {props.marginR}
+			href = {props.href}
 			fill="#584dcfdd"
 			width={props.width || "90px"}
 			height={props.height || "90px"}
