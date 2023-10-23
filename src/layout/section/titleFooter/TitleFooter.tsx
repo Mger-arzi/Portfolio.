@@ -6,7 +6,7 @@ import { FlexWrapper } from '../../../componenc/FlexWrapper';
 export  const TitleFooter = () => {
 	return (
 		<FlexWrapper justify='center'>
-            <SectionTitle fontSize='58px'>For any questions please mail me:<br></br><span>mger54598@gmail.com</span></SectionTitle>
+            <SectionTitle margin='200px 0' fontSize='58px'>For any questions please mail me:<br></br><span>mger54598@gmail.com</span></SectionTitle>
 
 		</FlexWrapper>
 	);
