@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "./Theme";
 
 type SectionTitleProps = {
 	fontSize?: string
@@ -6,7 +7,7 @@ type SectionTitleProps = {
 }
 
 export const SectionTitle = styled.h2<SectionTitleProps>`
-	color: red;
+	color: ${theme.colors.colorText.FontText};
 	text-align: center;
 	font-size: ${(props) => props.fontSize || "48px"};
 	margin: ${props => props.margin || "100px 0 0 0" };
@@ -19,8 +20,8 @@ export const SectionTitle = styled.h2<SectionTitleProps>`
 `;
 
 export const SectionDec = styled.p`
-color: blue;
+color: ${theme.colors.colorText.FontH};
 text-align: center;
-margin: 50px 0 100px 0px;
+margin: 20px 0 100px 0px;
 
 `

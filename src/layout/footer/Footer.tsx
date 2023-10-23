@@ -6,6 +6,7 @@ import { Navigation } from '../../componenc/navigation/Navigation';
 import { Container } from '../../componenc/container/Container';
 import { Icon } from '../../componenc/icon/Icon';
 import rocket from "../../accers/image/rocket-ship.svg"
+import { theme } from '../../componenc/Theme';
 
 
 const itemsNav = ["Home","About","Tech Stack","Projects","Contact"]
@@ -15,10 +16,11 @@ export const Footer = () => {
 	return (
 		<StyledFooter>
 			<Container>
-			<FlexWrapper align='center' justify='flex-end'>
-									<StyleSVG src={rocket} alt="rocket" />
+			<StyleSVG src={rocket} alt="rocket" />
 
-				<Text>+79999999999</Text>
+			<FlexWrapper gap='20px' align='center' justify='flex-end'>
+
+				<Text>+7 999 99 99 999</Text>
 				<Icon height='35' width='35' viewBox="0 0 23 23" iconId='LogoTelega'/>
 				<Icon height='30' width='30' viewBox="0 0 30 30" iconId='gitHubLogo'/>
 			</FlexWrapper>
@@ -34,21 +36,26 @@ export const Footer = () => {
 const StyledFooter = styled.section `
 	min-height: 30vh;
 	position: relative;
+	svg:hover{
+	transform: translateY(-5px);
+	transition: all 1s ease;
+	cursor: pointer;
+}
 `
 const Text = styled.p `
-	
+	font-size: 18px;
+	color: ${theme.colors.colorText.FontH};
 `
 const Divider = styled.p `
 	border-bottom: 1px solid #42446e38;
 
-	margin-bottom: 60px;
+	margin: 60px 0;
 `
 const StyleSVG = styled.img`
 	width: 50px;
 	position: absolute;
-	top: 10px;
-	left: 135px;
+	top: -10px;
+	left: 170px;
 	right: 0;
-
 
 `
