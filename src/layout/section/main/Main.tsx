@@ -139,7 +139,7 @@ const BorderPhoto2 = styled.div`
 		
 		position: absolute;
 			top: -30px;
-			left: -10px;
+			left: -60px;
 	}
 	&::after{
 		content: '';
@@ -153,6 +153,6 @@ const BorderPhoto2 = styled.div`
 
 		position: absolute;
 			top: -40px;
-			left: -25px;
+			left: -60px;
 	}
 `

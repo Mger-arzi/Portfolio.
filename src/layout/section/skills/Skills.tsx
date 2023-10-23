@@ -28,7 +28,6 @@ export const Skills = () => {
 };
 const StyledSkills = styled.section`
 	min-height: 100vh;
-	justify-content:space-between ;
 	svg {
 		margin: 40px;
 	}

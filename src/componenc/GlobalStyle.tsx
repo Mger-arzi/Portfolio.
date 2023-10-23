@@ -23,6 +23,7 @@ body {
 
 	a{
 		text-decoration: unset;
+		cursor: pointer;
 	}
 	ul{
 		list-style: none;

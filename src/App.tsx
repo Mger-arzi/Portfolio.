@@ -18,7 +18,7 @@ function App() {
             <Main/>
             <Skills/>
             <Works/>
-            <SliderComponent/>
+            {/* <SliderComponent/> */}
             <TitleFooter/>
             <Footer/>
 

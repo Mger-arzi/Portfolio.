@@ -20,7 +20,7 @@ export const Header = () => {
 				
 				<FlexWrapper align="center" justify="end;">
 
-					<StyleSVG src={rocket} alt="rocket" />
+					{/* <StyleSVG src={rocket} alt="rocket" /> */}
 						
 					
 					<Navigation navItems={itemsNav}/>
