@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../../../componenc/Theme';
+import { Icon } from '../../../../componenc/icon/Icon';
 
 type WorkPropsType = {
 	title: string
@@ -17,7 +18,7 @@ export const Work = (props: WorkPropsType) => {
 			<Text>{props.text}</Text>
 			<TechStack><span>Cтек:</span> {props.stack}</TechStack>
 			<Link href='#'>Открыть в браузере</Link> 
-			<Link href='#'>Просмотреть код</Link>
+			<Link href='#'><Icon viewBox="0 0 30 30" width="20px"height="20px" iconId='gitHubLogo1'/>Просмотреть код</Link>
 		</SteledWork>
 	);
 };

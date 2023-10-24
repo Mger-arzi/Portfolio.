@@ -57,6 +57,7 @@ li:hover{
 svg:hover{
 	transform: translateY(-5px);
 	transition: all 1s ease;
+	cursor: pointer;
 }
 `
 const StyleSVG = styled.img`
