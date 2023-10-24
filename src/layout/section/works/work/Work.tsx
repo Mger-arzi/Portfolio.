@@ -17,8 +17,8 @@ export const Work = (props: WorkPropsType) => {
 			<Title>{props.title}</Title>
 			<Text>{props.text}</Text>
 			<TechStack><span>Cтек:</span> {props.stack}</TechStack>
-			<Link href='#'>Открыть в браузере</Link> 
-			<Link href='#'><Icon viewBox="0 0 30 30" width="20px"height="20px" iconId='gitHubLogo1'/>Просмотреть код</Link>
+			<Link href='#'><Icon viewBox="0 -12 30 30" width="20px"height="20px" iconId='logoSkrep'/>Открыть в браузере</Link> 
+			<Link href='#'><Icon viewBox="0 -12 40 40" width="20px"height="20px" iconId='gitHubLogo1'/>Просмотреть код</Link>
 		</SteledWork>
 	);
 };
@@ -39,10 +39,10 @@ const Image = styled.img`
 `
 const Link = styled.a`
 color: rgba(0, 0, 0, 1);
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
-	margin-left: 30px;
-
+	margin-left: 20px;
+	text-decoration: underline ;
 	
 
 `
