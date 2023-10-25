@@ -5,6 +5,7 @@ import hello from "../../../accers/image/Hi_logo .svg";
 import { FlexWrapper } from "../../../componenc/FlexWrapper";
 import { Container } from "../../../componenc/container/Container";
 import { theme } from "../../../componenc/Theme";
+import img  from '../../../accers/image/Abstract.png'
 export const Main = () => {
 	return (
 		<StyledMain>
@@ -25,7 +26,20 @@ export const Main = () => {
 						<IFrontEnder>Я Front-end разработчик</IFrontEnder>
 					</div>
 					<WrapperPhoto>
-						<Photo src={photo} alt="" />
+						<div style={{
+							position: 'relative'
+						}}>
+							<img style={{
+								zIndex: 2,
+								position: 'absolute',
+								width: 590,
+								height: 590,
+								top: -117,
+								left: -105
+							}} src={img} />
+							<Photo src={photo} alt="" />
+						</div>
+						
 						{/* <BorderPhoto1></BorderPhoto1> */}
 						{/* <BorderPhoto2></BorderPhoto2> */}
 					</WrapperPhoto>
@@ -46,23 +60,16 @@ const Hello = styled.img`
 	height: 40px;
 `;
 const Photo = styled.img`
+	z-index: 999;
+	position: relative;
 	width: 350px;
 	height: 350px;
 	object-fit: cover;
 	background: linear-gradient(to right, #13b0f5, #e70faa) border-box;
 	border-radius: 50em;
 	border: 4px solid transparent;
-	/* position: relative; */
 
-	&::before{
-		/* content:""; */
-		background: url("../../../accers/image/Abstract.jpg");
-		position: absolute;
-
-		top: 0;
-		left: 0;
-		right: 0;
-	}
+	
 `
 
 const SpanHello = styled.span`
@@ -91,13 +98,18 @@ const IFrontEnder = styled.h1`
 `;
 
 const WrapperPhoto = styled.div`
-	position: relative;
+	/* position: relative;
 	 &::after{
+		content: '';
+		width: 350px;
+		height: 350px;
+		display: inline-block;
 		position: absolute;
-		background: url("../../../accers/image/Abstract.jpg");
-		top: 40px;
-		left: 40px;
-	 }
+		background: url("src/accers/image/BestNFTs-1.png") repeat 0 0;
+		top: 40px; 
+		 left: 40px; 
+		 z-index: 9999;
+	 } */
 
 
 

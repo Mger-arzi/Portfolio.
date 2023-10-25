@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { SectionDec, SectionTitle } from '../../../componenc/SectionTitle';
 import { FlexWrapper } from '../../../componenc/FlexWrapper';
 import { Work } from './work/Work';
-import PhotoWork1 from "../../../accers/image/Best NFTs-1.png"
+import PhotoWork1 from "../../../accers/image/BestNFTs-1.png"
 import { Container } from '../../../componenc/container/Container';
 
 
