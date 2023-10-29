@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio./static/css/main.31d6cfe0.css",
+    "main.js": "/Portfolio./static/js/main.7269d0d8.js",
+    "static/js/787.25eaef86.chunk.js": "/Portfolio./static/js/787.25eaef86.chunk.js",
+    "static/media/BestNFTs-1.png": "/Portfolio./static/media/BestNFTs-1.7d931c06e7380be6929a.png",
+    "static/media/Mger-1.jpeg": "/Portfolio./static/media/Mger-1.0173ec50805bb41866f3.jpeg",
+    "static/media/sprite.svg": "/Portfolio./static/media/sprite.8b5a6b340f78ff87f57f6589406062bc.svg",
+    "static/media/Abstract.png": "/Portfolio./static/media/Abstract.d4ededcd293955530927.png",
+    "static/media/rocket-ship.svg": "/Portfolio./static/media/rocket-ship.2fb07603c4c5f7326a9c9c54fea3fa7f.svg",
+    "static/media/Hi_logo .svg": "/Portfolio./static/media/Hi_logo .cf1614cb6a8bc10dc00473181c63244e.svg",
+    "index.html": "/Portfolio./index.html",
+    "main.7269d0d8.js.map": "/Portfolio./static/js/main.7269d0d8.js.map",
+    "787.25eaef86.chunk.js.map": "/Portfolio./static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.7269d0d8.js"
+  ]
+}
