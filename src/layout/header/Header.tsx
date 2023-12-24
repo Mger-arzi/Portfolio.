@@ -9,7 +9,7 @@ import rocket from "../../accers/image/rocket.svg"
 import { theme } from "../../componenc/Theme";
 
 
-const itemsNav = ["Home","About","Tech Stack","Projects","Contact"]
+const itemsNav = ["Home","Tech Stack","Projects","Contact"]
 
 
 
