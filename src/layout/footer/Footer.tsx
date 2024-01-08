@@ -36,10 +36,9 @@ export const Footer = () => {
 
 				<Text>+7 999 99 99 999</Text>
 				<Icon height='35' width='35' viewBox="0 0 23 23" iconId='LogoTelega'/>
-				<Icon height='30' width='30' viewBox="0 0 30 30" iconId='gitHubLogo'/>
+				<Icon href='https://github.com/Mger-arzi' height='30' width='30' viewBox="0 0 30 30" iconId='gitHubLogo'/>
 			</FlexWrapper>
 			<Divider/>
-			<Navigation navItems={itemsNav}/>
 
 			</Container>
 			

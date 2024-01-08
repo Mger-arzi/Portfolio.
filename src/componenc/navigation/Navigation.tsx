@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../Theme';
 import { ItemsNavType } from '../../layout/header/Header';
+import { Link } from 'react-scroll';
 
 
 export const Navigation = (props: {navItems:Array<ItemsNavType> }) => {
@@ -10,7 +11,13 @@ export const Navigation = (props: {navItems:Array<ItemsNavType> }) => {
 				<ul>
 					{props.navItems.map((item, index )=>{
 						return <li key={index}>
-							<a href={`#${item.href}`}>{item.title}</a>
+							<Link
+                                offset={-80}
+                                spy={true}
+                                activeClass="active"
+                                smooth={true} 
+                                to={item.href}>{item.title}
+                                </Link>
 						</li>
 					})}
 				</ul>
@@ -22,7 +29,7 @@ const StaledNav = styled.nav`
 		color: ${theme.colors.colorText.FontH};
 		font-weight: 500;
 		font-size: 20px;
-			&:hover{
+			&:hover, &.active{
 				color: #f7f2f2;
 			}
 	}

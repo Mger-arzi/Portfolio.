@@ -43,7 +43,7 @@ export const Header = () => {
 					
 					<Navigation navItems={itemsNav}/>
 					<Icon viewBox="0 0 23 23" width="35px"height="35px"  iconId="LogoTelega"/>
-					<Icon viewBox="0 0 30 30" width="30px"height="30px" iconId="gitHubLogo"/>
+					<Icon href="https://github.com/Mger-arzi" viewBox="0 0 30 30" width="30px"height="30px" iconId="gitHubLogo"/>
 					
 
 					
@@ -66,8 +66,8 @@ z-index: 9999;
 svg:not(:last-child){
 	margin-right: 20px;
 }
-li:hover{
-	transform: rotate(6deg) scale(1.3) translateY(-2px);
+li:hover, .active{
+    text-decoration: underline;
 	color: #fff;
 	transition: all 1s ease;
 
