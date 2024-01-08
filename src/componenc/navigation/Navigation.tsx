@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../Theme';
+import { ItemsNavType } from '../../layout/header/Header';
 
 
-export const Navigation = (props: {navItems:Array<string> }) => {
+export const Navigation = (props: {navItems:Array<ItemsNavType> }) => {
 	return (
 		<StaledNav>
 				<ul>
-					{props.navItems.map((item:string, index: number)=>{
+					{props.navItems.map((item, index )=>{
 						return <li key={index}>
-							<a href=''>{item}</a>
+							<a href={`#${item.href}`}>{item.title}</a>
 						</li>
 					})}
 				</ul>

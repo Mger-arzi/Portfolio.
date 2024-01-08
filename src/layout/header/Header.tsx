@@ -9,8 +9,26 @@ import rocket from "../../accers/image/rocket.svg"
 import { theme } from "../../componenc/Theme";
 
 
-const itemsNav = ["Home","Tech Stack","Projects","Contact"]
-
+// const itemsNav = ["Home","Tech Stack","Projects","Contact"]
+export type ItemsNavType = {
+    title: string
+    href: string
+}
+const itemsNav =[ 
+    {
+    title: "Home",
+    href: 'home'
+},    {
+    title: "Tech Stack",
+    href: 'tech Stack'
+},    {
+    title: "Projects",
+    href: 'projects'
+},    {
+    title: "Contact",
+    href: 'contact'
+}
+]
 
 
 export const Header = () => {

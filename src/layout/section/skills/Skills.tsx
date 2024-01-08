@@ -10,7 +10,7 @@ import Tilt from 'react-parallax-tilt';
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id = {'tech Stack'}>
             <Container>
                 <SectionTitle>Мой техничесикий стек </SectionTitle>
                 <SectionDec>Технологии, с которыми я работал в последнее время</SectionDec>

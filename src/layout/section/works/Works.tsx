@@ -10,7 +10,7 @@ import { Container } from '../../../componenc/container/Container';
 
 export const Works = () => {
 	return (
-		<StyledWorks>
+		<StyledWorks id ={'projects'}>
 			<Container>
 			<SectionTitle>
                 Проекты</SectionTitle>
