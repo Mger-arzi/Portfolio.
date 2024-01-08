@@ -7,6 +7,8 @@ import { Container } from "../../../componenc/container/Container";
 import { theme } from "../../../componenc/Theme";
 import img  from '../../../accers/image/Abstract.png'
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
+
 export const Main = () => {
 	return (
 		<StyledMain>
@@ -38,24 +40,35 @@ export const Main = () => {
                             <p>Я Front-end разработчик</p>
                         </IFrontEnder>
 					</div>
+                    
 					<WrapperPhoto>
+                    <Tilt className="parallax-effect-img"
+                                    tiltMaxAngleX={15}
+                                    tiltMaxAngleY={15}
+                                    perspective={600}
+                                    transitionSpeed={1000}
+                                    scale={1.1}
+                                    gyroscope={true}>
 						<div style={{
 							position: 'relative'
 						}}>
 							<img style={{
 								zIndex: 2,
 								position: 'absolute',
-								width: 590,
-								height: 590,
+								width: 550,
+								height: 550,
 								top: -117,
 								left: -105
 							}} src={img} />
-							<Photo src={photo} alt="" />
-						</div>
-						
+                              
+                                    <Photo src={photo} alt="avatar" />
+
+                                
+                        </div>
+						</Tilt>
 						{/* <BorderPhoto1></BorderPhoto1> */}
 						{/* <BorderPhoto2></BorderPhoto2> */}
-					</WrapperPhoto>
+					</WrapperPhoto> 
 				</FlexWrapper>
 			</Container>
 		</StyledMain>
@@ -63,6 +76,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
+position: relative;
 	min-height: 100vh;
 	background-color: ${theme.colors.primaryBg};
 	display: flex;

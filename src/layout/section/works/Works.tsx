@@ -7,11 +7,13 @@ import PhotoWork1 from "../../../accers/image/BestNFTs-1.png"
 import { Container } from '../../../componenc/container/Container';
 
 
+
 export const Works = () => {
 	return (
 		<StyledWorks>
 			<Container>
-			<SectionTitle>Проекты</SectionTitle>
+			<SectionTitle>
+                Проекты</SectionTitle>
 			<SectionDec>Вещи, которые я построил на данный момент</SectionDec>
 			<FlexWrapper gap="40px" justify='space-between' wrap='wrap'>
 				<Work src={PhotoWork1 }
@@ -45,6 +47,8 @@ export const Works = () => {
 	);
 };
 const StyledWorks = styled.section`
+position: relative;
+
 	/* min-height: 100vh; */
 
 `

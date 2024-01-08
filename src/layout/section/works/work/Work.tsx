@@ -24,6 +24,7 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const SteledWork = styled.div`
+
 	background-color: rgba(116, 116, 116, 0.764);
 	max-width: 335px;
 	width: 100%;

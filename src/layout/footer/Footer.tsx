@@ -34,6 +34,8 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.section `
+position: relative;
+z-index:2;
 	min-height: 30vh;
 	position: relative;
 	svg:hover{
