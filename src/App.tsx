@@ -4,37 +4,35 @@ import { Header } from './layout/header/Header';
 import { Main } from './layout/section/main/Main';
 import { Skills } from './layout/section/skills/Skills';
 import { Works } from './layout/section/works/Works';
-import { SliderComponent } from './layout/section/slider/SliderComponent';
-import { SectionTitle } from './componenc/SectionTitle';
 import { TitleFooter } from './layout/section/titleFooter/TitleFooter';
 import { Footer } from './layout/footer/Footer';
-import { Particle } from './componenc/particale/Partcale';
+import { Particle } from './components/particale/Partcale';
 
 
 function App() {
-    return (
-        <div >
-            <Particle/>
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Works/>
-            {/* <SliderComponent/> */}
-            <TitleFooter/>
-            <Footer/>
+  return (
+    <div >
+      <Particle />
+      <Header />
+      <Main />
+      <Skills />
+      <Works />
+      {/* <SliderComponent/> */}
+      <TitleFooter />
+      <Footer />
 
 
 
 
-            {/* <Title>Styled-components <span>.attrs</span> method</Title>
+      {/* <Title>Styled-components <span>.attrs</span> method</Title>
             <Form>
                 <CheckBox type='radio'/>
                 <Field type='checkbox'/>
                 <Field type = "radio"/>
                 <Field/>
             </Form> */}
-        </div>
-    );
+    </div>
+  );
 }
 
 export default App;

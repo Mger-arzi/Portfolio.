@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from '../../../componenc/SectionTitle';
-import { Icon } from '../../../componenc/icon/Icon';
+import { SectionTitle } from '../../../components/SectionTitle';
+import { Icon } from '../../../components/icon/Icon';
 import { Slider } from './Slider';
-import { FlexWrapper } from '../../../componenc/FlexWrapper';
+import { FlexWrapper } from '../../../components/FlexWrapper';
 
 export const SliderComponent = () => {
-	return (
-		<StyledSlider>
-			<SectionTitle>Testimony</SectionTitle>
-			<FlexWrapper direction='column' align='center'>
+  return (
+    <StyledSlider>
+      <SectionTitle>Testimony</SectionTitle>
+      <FlexWrapper direction='column' align='center'>
 
-				<Icon iconId='LogoTelega'/>
-				<Slider/>
-			</FlexWrapper>
+        <Icon iconId='LogoTelega' />
+        <Slider />
+      </FlexWrapper>
 
-		</StyledSlider>
-	);
+    </StyledSlider>
+  );
 };
 const StyledSlider = styled.section`
 	background-color: #f688b7;

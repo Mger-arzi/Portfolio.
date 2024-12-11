@@ -1,59 +1,59 @@
 import React from "react";
 import styled from "styled-components";
-import { Logo } from "../../componenc/logo/Logo";
-import { Navigation } from "../../componenc/navigation/Navigation";
-import { Container } from "../../componenc/container/Container";
-import { FlexWrapper } from "../../componenc/FlexWrapper";
-import { Icon } from "../../componenc/icon/Icon";
+import { Logo } from "../../components/logo/Logo";
+import { Navigation } from "../../components/navigation/Navigation";
+import { Container } from "../../components/container/Container";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { Icon } from "../../components/icon/Icon";
 import rocket from "../../accers/image/rocket.svg"
-import { theme } from "../../componenc/Theme";
+import { theme } from "../../components/Theme";
 
 
 // const itemsNav = ["Home","Tech Stack","Projects","Contact"]
 export type ItemsNavType = {
-    title: string
-    href: string
+  title: string
+  href: string
 }
-const itemsNav =[ 
-    {
+const itemsNav = [
+  {
     title: "Home",
     href: 'home'
-},    {
+  }, {
     title: "Tech Stack",
     href: 'tech Stack'
-},    {
+  }, {
     title: "Projects",
     href: 'projects'
-},    {
+  }, {
     title: "Contact",
     href: 'contact'
-}
+  }
 ]
 
 
 export const Header = () => {
-	return (
-		<StyledHeader>
-			<Container>
-				
-				<FlexWrapper align="center" justify="end;">
+  return (
+    <StyledHeader>
+      <Container>
 
-					{/* <StyleSVG src={rocket} alt="rocket" /> */}
-						
-					
-					<Navigation navItems={itemsNav}/>
-					<Icon viewBox="0 0 23 23" width="35px"height="35px"  iconId="LogoTelega"/>
-					<Icon href="https://github.com/Mger-arzi" viewBox="0 0 30 30" width="30px"height="30px" iconId="gitHubLogo"/>
-					
+        <FlexWrapper align="center" justify="end;">
 
-					
-				</FlexWrapper>
-				
-			</Container>
-			
-			
-		</StyledHeader>
-	);
+          {/* <StyleSVG src={rocket} alt="rocket" /> */}
+
+
+          <Navigation navItems={itemsNav} />
+          <Icon href="t.me/Mgerchick" viewBox="0 0 23 23" width="35px" height="35px" iconId="LogoTelega" />
+          <Icon href="https://github.com/Mger-arzi" viewBox="0 0 30 30" width="30px" height="30px" iconId="gitHubLogo" />
+
+
+
+        </FlexWrapper>
+
+      </Container>
+
+
+    </StyledHeader>
+  );
 };
 const StyledHeader = styled.header`
 background-color: #191919;

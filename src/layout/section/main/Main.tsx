@@ -2,77 +2,77 @@ import React from "react";
 import styled from "styled-components";
 import photo from "../../../accers/image/Mger-1.jpeg";
 import hello from "../../../accers/image/Hi_logo .svg";
-import { FlexWrapper } from "../../../componenc/FlexWrapper";
-import { Container } from "../../../componenc/container/Container";
-import { theme } from "../../../componenc/Theme";
-import img  from '../../../accers/image/Abstract.png'
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Container } from "../../../components/container/Container";
+import { theme } from "../../../components/Theme";
+import img from '../../../accers/image/Abstract.png'
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
-	return (
-		<StyledMain id= {'home'}>
-			<Container>
-				<FlexWrapper
-					height="100%"
-					align={"center"}
-					justify=" space-between "
-				>
-					<div>
-						<SpanHello>
-							Привет
-                            
-							<Hello src={hello} />
-						</SpanHello>
-						<br></br>
-						<SpanName>Меня зовут</SpanName>
-						<MyName> Арзикян Мгер</MyName>
-						<IFrontEnder>
-                            <Typewriter
-                                options={{
-                                    strings: [' Я Front-end разработчик', 'I`m IronMan'],
-                                    autoStart: true,
-                                    loop: true,
-                                    delay: 50,
-                                    cursor: ''
-                                }}
-                            />
-                            <p>Я Front-end разработчик</p>
-                        </IFrontEnder>
-					</div>
-                    
-					<WrapperPhoto>
-                    <Tilt className="parallax-effect-img"
-                                    tiltMaxAngleX={15}
-                                    tiltMaxAngleY={15}
-                                    perspective={600}
-                                    transitionSpeed={1000}
-                                    scale={1.1}
-                                    gyroscope={true}>
-						<div style={{
-							position: 'relative'
-						}}>
-							<img style={{
-								zIndex: 2,
-								position: 'absolute',
-								width: 550,
-								height: 550,
-								top: -117,
-								left: -105
-							}} src={img} />
-                              
-                                    <Photo src={photo} alt="avatar" />
+  return (
+    <StyledMain id={'home'}>
+      <Container>
+        <FlexWrapper
+          height="100%"
+          align={"center"}
+          justify=" space-between "
+        >
+          <div>
+            <SpanHello>
+              Привет
 
-                                
-                        </div>
-						</Tilt>
-						{/* <BorderPhoto1></BorderPhoto1> */}
-						{/* <BorderPhoto2></BorderPhoto2> */}
-					</WrapperPhoto> 
-				</FlexWrapper>
-			</Container>
-		</StyledMain>
-	);
+              <Hello src={hello} />
+            </SpanHello>
+            <br></br>
+            <SpanName>Меня зовут</SpanName>
+            <MyName> Арзикян Мгер</MyName>
+            <IFrontEnder>
+              <Typewriter
+                options={{
+                  strings: [' Я Front-end разработчик', 'I`m IronMan'],
+                  autoStart: true,
+                  loop: true,
+                  delay: 50,
+                  cursor: ''
+                }}
+              />
+              <p>Я Front-end разработчик</p>
+            </IFrontEnder>
+          </div>
+
+          <WrapperPhoto>
+            <Tilt className="parallax-effect-img"
+              tiltMaxAngleX={15}
+              tiltMaxAngleY={15}
+              perspective={600}
+              transitionSpeed={1000}
+              scale={1.1}
+              gyroscope={true}>
+              <div style={{
+                position: 'relative'
+              }}>
+                <img style={{
+                  zIndex: 2,
+                  position: 'absolute',
+                  width: 550,
+                  height: 550,
+                  top: -117,
+                  left: -105
+                }} src={img} />
+
+                <Photo src={photo} alt="avatar" />
+
+
+              </div>
+            </Tilt>
+            {/* <BorderPhoto1></BorderPhoto1> */}
+            {/* <BorderPhoto2></BorderPhoto2> */}
+          </WrapperPhoto>
+        </FlexWrapper>
+      </Container>
+    </StyledMain>
+  );
 };
 
 const StyledMain = styled.div`

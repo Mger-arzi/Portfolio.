@@ -1,26 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../../../../componenc/Theme';
-import { Icon } from '../../../../componenc/icon/Icon';
+import { theme } from '../../../../components/Theme';
+import { Icon } from '../../../../components/icon/Icon';
 
 type WorkPropsType = {
-	title: string
-	text: string
-	src: string
-	stack: string
+  title: string
+  text: string
+  src: string
+  stack: string
+  hrefBrayser?: string
+  hrefGitHub?: string
 }
 
 export const Work = (props: WorkPropsType) => {
-	return (
-		<SteledWork>
-			<Image src={props.src} alt="image" />
-			<Title>{props.title}</Title>
-			<Text>{props.text}</Text>
-			<TechStack><span>Cтек:</span> {props.stack}</TechStack>
-			<Link href='#'><Icon viewBox="0 -12 30 30" width="20px"height="20px" iconId='logoSkrep'/>Открыть в браузере</Link> 
-			<Link href='#'><Icon viewBox="0 -12 40 40" width="20px"height="20px" iconId='gitHubLogo1'/>Просмотреть код</Link>
-		</SteledWork>
-	);
+  return (
+    <SteledWork>
+      <Image src={props.src} alt="image" />
+      <Title>{props.title}</Title>
+      <Text>{props.text}</Text>
+      <TechStack><span>Cтек:</span> {props.stack}</TechStack>
+      <Link href={props.hrefBrayser}><Icon viewBox="0 -12 30 30" width="20px" height="20px" iconId='logoSkrep' />Открыть в браузере</Link>
+      <Link href={props.hrefGitHub}><Icon viewBox="0 -12 40 40" width="20px" height="20px" iconId='gitHubLogo1' />Просмотреть код</Link>
+    </SteledWork>
+  );
 };
 
 const SteledWork = styled.div`

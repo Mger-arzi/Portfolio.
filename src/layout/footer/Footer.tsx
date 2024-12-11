@@ -1,52 +1,33 @@
-import React from 'react';
 import styled from 'styled-components';
-import { FlexWrapper } from '../../componenc/FlexWrapper';
-import { Logo } from '../../componenc/logo/Logo';
-import { Navigation } from '../../componenc/navigation/Navigation';
-import { Container } from '../../componenc/container/Container';
-import { Icon } from '../../componenc/icon/Icon';
+import { FlexWrapper } from '../../components/FlexWrapper';
+import { Container } from '../../components/container/Container';
+import { Icon } from '../../components/icon/Icon';
 import rocket from "../../accers/image/rocket-ship.svg"
-import { theme } from '../../componenc/Theme';
+import { theme } from '../../components/Theme';
 
-
-const itemsNav =[ 
-    {
-    title: "Home",
-    href: 'home'
-},    {
-    title: "Tech Stack",
-    href: '"tech Stack"'
-},    {
-    title: "Projects",
-    href: 'projects'
-},    {
-    title: "Contact",
-    href: 'contact'
-}
-]
 
 
 export const Footer = () => {
-	return (
-		<StyledFooter id={"contact"}>
-			<Container>
-			<StyleSVG src={rocket} alt="rocket" />
+  return (
+    <StyledFooter id={"contact"}>
+      <Container>
+        <StyleSVG src={rocket} alt="rocket" />
 
-			<FlexWrapper gap='20px' align='center' justify='flex-end'>
+        <FlexWrapper gap='20px' align='center' justify='flex-end'>
 
-				<Text>+7 999 99 99 999</Text>
-				<Icon height='35' width='35' viewBox="0 0 23 23" iconId='LogoTelega'/>
-				<Icon href='https://github.com/Mger-arzi' height='30' width='30' viewBox="0 0 30 30" iconId='gitHubLogo'/>
-			</FlexWrapper>
-			<Divider/>
+          <Text>+7 938 54 999 18</Text>
+          <Icon height='35' width='35' viewBox="0 0 23 23" iconId='LogoTelega' />
+          <Icon href='https://github.com/Mger-arzi' height='30' width='30' viewBox="0 0 30 30" iconId='gitHubLogo' />
+        </FlexWrapper>
+        <Divider />
 
-			</Container>
-			
-		</StyledFooter>
-	);
+      </Container>
+
+    </StyledFooter>
+  );
 };
 
-const StyledFooter = styled.section `
+const StyledFooter = styled.section`
 position: relative;
 z-index:2;
 	min-height: 30vh;
@@ -57,11 +38,11 @@ z-index:2;
 	cursor: pointer;
 }
 `
-const Text = styled.p `
+const Text = styled.p`
 	font-size: 18px;
 	color: ${theme.colors.colorText.FontH};
 `
-const Divider = styled.p `
+const Divider = styled.p`
 	border-bottom: 1px solid #42446e38;
 
 	margin: 60px 0;
